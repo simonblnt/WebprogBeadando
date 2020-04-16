@@ -1,0 +1,103 @@
+/* 
+ * Main
+*/
+html {
+    background-color: #cfd9df;
+    background-image: radial-gradient(#cfd9df 100%, #e2ebf0 0%); /* https://cssgradient.io/gradient-backgrounds/ */
+
+    font-family: 'Nova Flat';
+    font-size: 22px;
+    margin: auto;
+    height: 100%;
+}
+
+body {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+ * Game
+*/
+.game-wrapper {
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
+    margin: 0;
+
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+/* 
+ * Control bar
+*/
+.control-wrapper {
+    flex: 1;
+    height: 10%;
+    border-bottom: 1px solid black;
+    border-radius: 2px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.control {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    margin: 5px;
+    height: 30%;
+}
+
+.coordinate {
+    flex: 4;
+}
+
+.char-select {
+    flex: 1;
+}
+
+.btn {
+    flex: 2;
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%) /* https://cssgradient.io/gradient-backgrounds/ */
+}
+.btn:hover { 
+    background-position: right center;
+}
+
+/* 
+ * Game Table
+*/
+.table-wrapper {
+    flex:3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.game-table {
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.game-table td {
+    border: 1px solid black;
+}
