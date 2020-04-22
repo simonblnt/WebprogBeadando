@@ -5,7 +5,7 @@ $password = "";
 $db_name = "tictactoe";
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password, $db_name);
 
 // Check connection
 if (!$conn) {
@@ -14,7 +14,7 @@ if (!$conn) {
 echo "Connected successfully";
 
 // Create database
-$sql = "CREATE DATABASE tictactoe";
+$sql = "CREATE DATABASE IF NOT EXISTS tictactoe";
 if (mysqli_query($conn, $sql)) {
     echo "Database created successfully";
 } else {
@@ -22,13 +22,13 @@ if (mysqli_query($conn, $sql)) {
 }
 
 // Create Game Table
-$sql = "CREATE TABLE games (
+$sql = "CREATE TABLE IF NOT EXISTS games (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     player1_id INT(6) NOT NULL,
     player2_id VARCHAR(6) NOT NULL,
     winner_id INT(6),
-    time_started TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    time_ended TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    time_started TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    time_ended TIMESTAMP NULL DEFAULT NULL
     )";
     
 if (mysqli_query($conn, $sql)) {
@@ -38,7 +38,7 @@ if (mysqli_query($conn, $sql)) {
 }
 
 // Create Player Table
-$sql = "CREATE TABLE players (
+$sql = "CREATE TABLE IF NOT EXISTS players (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     player_name INT(2) NOT NULL,
     on_turn BOOLEAN DEFAULT false
@@ -51,7 +51,7 @@ if (mysqli_query($conn, $sql)) {
 }
 
 // Create Tile Table
-$sql = "CREATE TABLE tiles (
+$sql = "CREATE TABLE IF NOT EXISTS tiles (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     x_coord INT(2) NOT NULL,
     y_coord INT(2) NOT NULL,
@@ -66,7 +66,7 @@ if (mysqli_query($conn, $sql)) {
 }
 
 // Create Turn Table
-$sql = "CREATE TABLE turns (
+$sql = "CREATE TABLE IF NOT EXISTS turns (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     game_id INT(6),
     player_id INT(6),
