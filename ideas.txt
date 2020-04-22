@@ -1,0 +1,2 @@
+- A Submit button lehetne olyan, hogy hoverre odaanimálja mellé azt a karaktert,
+    ami a select mezőben ki van választva. (https://www.fabriziovanmarciano.com/button-styles/?cn-reloaded=1)

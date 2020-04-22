@@ -92,12 +92,13 @@ body {
 }
 
 .game-table {
-    width: 80%;
-    height: 80%;
+    width: fit-content;
+    height: fit-content;
     border: 1px solid black;
     text-align: center;
 }
 
 .game-table td {
+    padding: 15px;
     border: 1px solid black;
 }

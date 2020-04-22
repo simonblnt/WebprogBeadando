@@ -7,6 +7,9 @@
 
 <body>
     <div class="game-wrapper">
+        <?php
+            new TicTacToe();
+        ?>
       <div class="control-wrapper">
         <form action="" class="control">
             <input type="text" id="x_coord" name="x_coord" class="item coordinate" value="">
@@ -21,18 +24,12 @@
                     <td>X</td>
                     <td>X</td>
                     <td>X</td>
-                </tr>
-                <tr> 
-                    <td>X</td>
                     <td>X</td>
                     <td>X</td>
                 </tr>
                 <tr> 
                     <td>X</td>
                     <td>X</td>
-                    <td>X</td>
-                </tr>
-                <tr> 
                     <td>X</td>
                     <td>X</td>
                     <td>X</td>
@@ -41,9 +38,6 @@
                     <td>X</td>
                     <td>X</td>
                     <td>X</td>
-                </tr>
-                <tr> 
-                    <td>X</td>
                     <td>X</td>
                     <td>X</td>
                 </tr>
@@ -51,13 +45,12 @@
                     <td>X</td>
                     <td>X</td>
                     <td>X</td>
-                </tr>
-                <tr> 
-                    <td>X</td>
                     <td>X</td>
                     <td>X</td>
                 </tr>
                 <tr> 
+                    <td>X</td>
+                    <td>X</td>
                     <td>X</td>
                     <td>X</td>
                     <td>X</td>
