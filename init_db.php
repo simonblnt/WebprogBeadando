@@ -1,5 +1,5 @@
 <?php
-    require 'db_conn.php';
+    require_once 'config.php';
 
 #region Create Database
     #region Database

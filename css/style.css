@@ -2,11 +2,7 @@
  * Main
 */
 html {
-  background-color: #cfd9df;
-  background-image: radial-gradient(
-    #cfd9df 100%,
-    #e2ebf0 0%
-  ); /* https://cssgradient.io/gradient-backgrounds/ */
+  background-color: #dff9fb;
 
   font-family: "Nova Flat";
   font-size: 22px;
@@ -37,12 +33,12 @@ body {
 */
 .game-wrapper {
   width: 40%;
-  height: 80%;
+  height: 60%;
   background-color: transparent;
   margin: 0;
 
-  border: 2px solid black;
-  border-radius: 5px;
+  border: 1px solid #6ab04c;
+  border-radius: 10px;
 
   display: flex;
   flex-direction: column;
@@ -54,7 +50,7 @@ body {
 */
 .control-wrapper {
   flex: 1;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid #3D9970; */
   border-radius: 2px;
   display: flex;
   justify-content: center;
@@ -72,52 +68,63 @@ body {
 
 .item {
   margin: 10px;
-  height: 30%;
+  height: 40%;
 }
 
 .coordinate {
   flex: 4;
   border: none;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 2px 2px;
   background: transparent;
-  border-bottom: 2px solid rgba(228, 255, 222, 1);
-  transition: 0.9s;
+  border-bottom: 2px solid #6ab04c;
+  transition: 0.5s;
   text-align: center;
 }
 
 .coordinate:hover {
-  background: rgb(212, 255, 203);
+  background: #badc58;
 }
 
 .coordinate:focus {
-  outline-color: rgb(188, 255, 173);
-  background: rgba(228, 255, 222, 1);
+  outline-color: #6ab04c;
+  box-shadow: 0 0 3pt 2pt #6ab04c;
+  background: #badc58;
 }
 
 .char-select {
   flex: 1;
-  background: rgb(228, 255, 222);
-  background: linear-gradient(
-    0deg,
-    rgba(228, 255, 222, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  
+  background: transparent;
   font-family: inherit;
   border-radius: 5px;
-  border: 1px solid rgba(228, 255, 222, 1);
+  border: 2px solid #6ab04c;
+  outline-color: #6ab04c;
+  transition: 0.5s;
+}
+
+.char-select:hover {
+    background: #badc58;
+}
+
+.char-select:focus {
+    box-shadow: 0 0 3pt 3pt #6ab04c;
 }
 
 .btn {
   font-family: inherit;
   flex: 2;
-  background: rgb(255, 255, 255);
-  transition: 0.9s;
-  border: none;
+  background: transparent;
+  transition: background 0.5s;
+  border: 2px solid #6ab04c;
   border-radius: 5px;
-  outline-color: rgb(188, 255, 173);
+  outline-color: #6ab04c;
 }
 .btn:hover {
-  background: rgb(228, 255, 222);
+  background: #badc58;
+}
+
+.btn:focus {
+    box-shadow: 0 0 3pt 3pt #6ab04c;
 }
 
 /* 
@@ -132,9 +139,12 @@ body {
 }
 
 .game-table {
+    font-family: inherit;
   width: 250px;
   height: 250px;
-  border: 1px solid black;
+  border: 2px solid #3D9970;
+  border-radius: 5px;
+  box-shadow: 0 0 1pt 1pt #6ab04c;
   text-align: center;
 }
 
@@ -143,6 +153,9 @@ body {
 }
 
 .game-table td {
-  padding: 10px;
-  border: 1px solid black;
+    width: 30px;
+    height: 30px;
+  padding: 0;
+  border: 1px solid #3D9970;
+  border-radius: 3px;
 }
