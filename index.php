@@ -6,10 +6,12 @@
 </head>
 
 <body>
+    
     <div class="game-wrapper">
         <?php
+            $size = 5;
+
             require 'game.php';
         ?>
-      
     </div>
 </body>
