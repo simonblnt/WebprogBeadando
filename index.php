@@ -11,6 +11,7 @@
         <?php
             $size = 5;
 
+            require 'control_bar.php';
             require 'game.php';
         ?>
     </div>

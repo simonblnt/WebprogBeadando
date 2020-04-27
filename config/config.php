@@ -1,7 +1,7 @@
 <?php
-include('logger.php');
+include('log/logger.php');
 $log = new Logging();
-$log->lfile('log.txt');
+$log->lfile('log/log.txt');
 
 $servername = "localhost";
 $username = "root";

@@ -1,0 +1,15 @@
+[27/Apr/2020:15:18:59] (index) Connected to database
+[27/Apr/2020:15:18:59] (index) Row: Player2
+[27/Apr/2020:15:18:59] (index) Row: Player1
+[27/Apr/2020:15:18:59] (index) Player 1: 0
+[27/Apr/2020:15:18:59] (index) Player 2: 0
+[27/Apr/2020:15:40:15] (index) Connected to database
+[27/Apr/2020:15:40:53] (index) Connected to database
+[27/Apr/2020:15:46:28] (index) Connected to database
+[27/Apr/2020:15:51:30] (index) Connected to database
+[27/Apr/2020:15:58:41] (index) Connected to database
+[27/Apr/2020:15:58:52] (index) Connected to database
+[27/Apr/2020:16:01:34] (index) Connected to database
+[27/Apr/2020:16:01:51] (index) Connected to database
+[27/Apr/2020:16:01:58] (index) Connected to database
+[27/Apr/2020:16:02:01] (index) Connected to database

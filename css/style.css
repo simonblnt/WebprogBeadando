@@ -67,7 +67,7 @@ body {
 }
 
 .item {
-  margin: 10px;
+  margin: 5px;
   height: 40%;
 }
 
@@ -110,7 +110,24 @@ body {
     box-shadow: 0 0 3pt 3pt #6ab04c;
 }
 
+.icn{
+  background: transparent;
+  border: none;
+  width: inherit;
+  height: inherit;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: 5px;
+}
+
+.icn img{
+  height: 30px;
+  width: 30px;
+}
+
 .btn {
+  
   font-family: inherit;
   flex: 2;
   background: transparent;
@@ -133,13 +150,19 @@ body {
 .table-wrapper {
   flex: 5;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 1px;
+}
+
+.game-notification{
+  flex: 1;
 }
 
 .game-table {
     font-family: inherit;
+    flex: 8;
   width: 250px;
   height: 250px;
   border: 2px solid #3D9970;
