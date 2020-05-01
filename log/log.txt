@@ -94,3 +94,168 @@
 [01/May/2020:13:57:05] (update_game_state) Turn saved successfully
 [01/May/2020:13:57:05] (update_game_state) Player changed successfully
 [01/May/2020:13:57:05] (index) Connected to database
+[01/May/2020:14:09:05] (index) Connected to database
+[01/May/2020:14:16:14] (update_game_state) Connected to database
+[01/May/2020:14:16:14] (update_game_state) Tile updated successfully
+[01/May/2020:14:16:14] (update_game_state) Turn saved successfully
+[01/May/2020:14:16:14] (update_game_state) Player changed successfully
+[01/May/2020:14:16:14] (index) Connected to database
+[01/May/2020:14:17:54] (index) Connected to database
+[01/May/2020:14:18:03] (update_game_state) Connected to database
+[01/May/2020:14:18:03] (update_game_state) Tile updated successfully
+[01/May/2020:14:18:03] (update_game_state) Turn saved successfully
+[01/May/2020:14:18:03] (update_game_state) checkwin eleje
+[01/May/2020:14:18:03] (update_game_state) checkwin table state utan
+[01/May/2020:14:18:03] (update_game_state) Player changed successfully
+[01/May/2020:14:18:03] (index) Connected to database
+[01/May/2020:14:21:24] (index) Connected to database
+[01/May/2020:14:21:26] (update_game_state) Connected to database
+[01/May/2020:14:21:26] (update_game_state) Tile updated successfully
+[01/May/2020:14:21:26] (update_game_state) Turn saved successfully
+[01/May/2020:14:21:26] (update_game_state) checkwin eleje
+[01/May/2020:14:21:26] (update_game_state) checkwin table state utan
+[01/May/2020:14:21:26] (update_game_state) X Win:
+[01/May/2020:14:21:26] (update_game_state) O Win:
+[01/May/2020:14:21:26] (update_game_state) Player changed successfully
+[01/May/2020:14:21:26] (index) Connected to database
+[01/May/2020:14:23:41] (index) Connected to database
+[01/May/2020:14:23:42] (update_game_state) Connected to database
+[01/May/2020:14:23:42] (update_game_state) Tile updated successfully
+[01/May/2020:14:23:42] (update_game_state) Turn saved successfully
+[01/May/2020:14:23:42] (update_game_state) checkwin eleje
+[01/May/2020:14:23:42] (update_game_state) checkwin table state utan
+[01/May/2020:14:23:42] (update_game_state) X Win:
+[01/May/2020:14:23:42] (update_game_state) O Win:
+[01/May/2020:14:23:42] (update_game_state) Player changed successfully
+[01/May/2020:14:23:42] (index) Connected to database
+[01/May/2020:14:23:43] (update_game_state) Connected to database
+[01/May/2020:14:23:43] (update_game_state) Tile updated successfully
+[01/May/2020:14:23:43] (update_game_state) Turn save error: <br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+[01/May/2020:14:23:43] (update_game_state) checkwin eleje
+[01/May/2020:14:23:43] (update_game_state) checkwin table state utan
+[01/May/2020:14:23:43] (update_game_state) X Win:
+[01/May/2020:14:23:43] (update_game_state) O Win:
+[01/May/2020:14:23:43] (update_game_state) Player changed successfully
+[01/May/2020:14:23:43] (index) Connected to database
+[01/May/2020:14:23:54] (update_game_state) Connected to database
+[01/May/2020:14:23:54] (update_game_state) Tile updated successfully
+[01/May/2020:14:23:54] (update_game_state) Turn save error: <br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+[01/May/2020:14:23:54] (update_game_state) checkwin eleje
+[01/May/2020:14:23:54] (update_game_state) checkwin table state utan
+[01/May/2020:14:23:54] (update_game_state) X Win:
+[01/May/2020:14:23:54] (update_game_state) O Win:
+[01/May/2020:14:23:55] (update_game_state) Player changed successfully
+[01/May/2020:14:23:55] (index) Connected to database
+[01/May/2020:14:25:06] (index) Connected to database
+[01/May/2020:14:25:08] (update_game_state) Connected to database
+[01/May/2020:14:25:08] (update_game_state) Tile updated successfully
+[01/May/2020:14:25:08] (update_game_state) Turn saved successfully
+[01/May/2020:14:25:08] (update_game_state) checkwin table state utan
+[01/May/2020:14:25:08] (update_game_state) X Win:
+[01/May/2020:14:25:08] (update_game_state) O Win:
+[01/May/2020:14:25:08] (update_game_state) Player changed successfully
+[01/May/2020:14:25:08] (index) Connected to database
+[01/May/2020:14:26:01] (index) Connected to database
+[01/May/2020:14:26:04] (update_game_state) Connected to database
+[01/May/2020:14:26:04] (update_game_state) Tile updated successfully
+[01/May/2020:14:26:04] (update_game_state) Turn saved successfully
+[01/May/2020:14:26:04] (update_game_state) checkwin table state utan
+[01/May/2020:14:26:04] (update_game_state) X Win:
+[01/May/2020:14:26:04] (update_game_state) O Win:
+[01/May/2020:14:26:04] (update_game_state) Player changed successfully
+[01/May/2020:14:26:05] (index) Connected to database
+[01/May/2020:14:26:17] (index) Connected to database
+[01/May/2020:14:26:19] (update_game_state) Connected to database
+[01/May/2020:14:26:19] (update_game_state) Tile updated successfully
+[01/May/2020:14:26:19] (update_game_state) Turn saved successfully
+[01/May/2020:14:26:19] (update_game_state) checkwin table state utan
+[01/May/2020:14:26:19] (update_game_state) X Win:
+[01/May/2020:14:26:19] (update_game_state) O Win:
+[01/May/2020:14:26:19] (update_game_state) Player changed successfully
+[01/May/2020:14:26:19] (index) Connected to database
+[01/May/2020:14:27:06] (index) Connected to database
+[01/May/2020:14:27:08] (update_game_state) Connected to database
+[01/May/2020:14:27:08] (update_game_state) Tile updated successfully
+[01/May/2020:14:27:08] (update_game_state) Turn saved successfully
+[01/May/2020:14:27:08] (update_game_state) checkwin table state utan
+[01/May/2020:14:27:08] (update_game_state) X count:x_count
+[01/May/2020:14:27:08] (update_game_state) X count:x_count
+[01/May/2020:14:27:08] (update_game_state) X count:x_count
+[01/May/2020:14:27:08] (update_game_state) X count:x_count
+[01/May/2020:14:27:08] (update_game_state) X count:x_count
+[01/May/2020:14:27:08] (update_game_state) X Win:1
+[01/May/2020:14:27:08] (update_game_state) O Win:
+[01/May/2020:14:27:08] (update_game_state) Player removed from turn successfully
+[01/May/2020:14:27:08] (update_game_state) Winner set successfully
+[01/May/2020:14:27:08] (index) Connected to database
+[01/May/2020:14:28:32] (update_game_state) Connected to database
+[01/May/2020:14:28:32] (update_game_state) Game ended successfully
+[01/May/2020:14:28:32] (update_game_state) Game created successfully
+[01/May/2020:14:28:32] (update_game_state) Table reset successful
+[01/May/2020:14:28:32] (index) Connected to database
+[01/May/2020:14:28:36] (update_game_state) Connected to database
+[01/May/2020:14:28:36] (update_game_state) Tile updated successfully
+[01/May/2020:14:28:36] (update_game_state) Turn saved successfully
+[01/May/2020:14:28:36] (update_game_state) checkwin table state utan
+[01/May/2020:14:28:36] (update_game_state) X count:x_count
+[01/May/2020:14:28:36] (update_game_state) X count:x_count
+[01/May/2020:14:28:36] (update_game_state) X count:x_count
+[01/May/2020:14:28:36] (update_game_state) X count:x_count
+[01/May/2020:14:28:36] (update_game_state) X count:x_count
+[01/May/2020:14:28:36] (update_game_state) X Win:
+[01/May/2020:14:28:36] (update_game_state) O Win:
+[01/May/2020:14:28:36] (update_game_state) Player changed successfully
+[01/May/2020:14:28:36] (index) Connected to database
+[01/May/2020:14:28:39] (update_game_state) Connected to database
+[01/May/2020:14:28:39] (update_game_state) Tile updated successfully
+[01/May/2020:14:28:39] (update_game_state) Turn saved successfully
+[01/May/2020:14:28:39] (update_game_state) checkwin table state utan
+[01/May/2020:14:28:39] (update_game_state) X count:x_count
+[01/May/2020:14:28:39] (update_game_state) X count:x_count
+[01/May/2020:14:28:39] (update_game_state) X count:x_count
+[01/May/2020:14:28:39] (update_game_state) X count:x_count
+[01/May/2020:14:28:39] (update_game_state) X count:x_count
+[01/May/2020:14:28:39] (update_game_state) X Win:
+[01/May/2020:14:28:39] (update_game_state) O Win:
+[01/May/2020:14:28:39] (update_game_state) Player changed successfully
+[01/May/2020:14:28:39] (index) Connected to database
+[01/May/2020:14:28:41] (update_game_state) Connected to database
+[01/May/2020:14:28:41] (update_game_state) Tile updated successfully
+[01/May/2020:14:28:41] (update_game_state) Turn saved successfully
+[01/May/2020:14:28:41] (update_game_state) checkwin table state utan
+[01/May/2020:14:28:41] (update_game_state) X count:x_count
+[01/May/2020:14:28:41] (update_game_state) X count:x_count
+[01/May/2020:14:28:41] (update_game_state) X count:x_count
+[01/May/2020:14:28:41] (update_game_state) X count:x_count
+[01/May/2020:14:28:41] (update_game_state) X count:x_count
+[01/May/2020:14:28:41] (update_game_state) X Win:
+[01/May/2020:14:28:41] (update_game_state) O Win:
+[01/May/2020:14:28:41] (update_game_state) Player changed successfully
+[01/May/2020:14:28:41] (index) Connected to database
+[01/May/2020:14:28:53] (update_game_state) Connected to database
+[01/May/2020:14:28:53] (update_game_state) Tile updated successfully
+[01/May/2020:14:28:53] (update_game_state) Turn saved successfully
+[01/May/2020:14:28:53] (update_game_state) checkwin table state utan
+[01/May/2020:14:28:53] (update_game_state) X count:x_count
+[01/May/2020:14:28:53] (update_game_state) X count:x_count
+[01/May/2020:14:28:53] (update_game_state) X count:x_count
+[01/May/2020:14:28:53] (update_game_state) X count:x_count
+[01/May/2020:14:28:53] (update_game_state) X count:x_count
+[01/May/2020:14:28:53] (update_game_state) X Win:
+[01/May/2020:14:28:53] (update_game_state) O Win:
+[01/May/2020:14:28:53] (update_game_state) Player changed successfully
+[01/May/2020:14:28:53] (index) Connected to database
+[01/May/2020:14:28:58] (update_game_state) Connected to database
+[01/May/2020:14:28:58] (update_game_state) Tile updated successfully
+[01/May/2020:14:28:58] (update_game_state) Turn saved successfully
+[01/May/2020:14:28:58] (update_game_state) checkwin table state utan
+[01/May/2020:14:28:58] (update_game_state) X count:x_count
+[01/May/2020:14:28:58] (update_game_state) X count:x_count
+[01/May/2020:14:28:58] (update_game_state) X count:x_count
+[01/May/2020:14:28:58] (update_game_state) X count:x_count
+[01/May/2020:14:28:58] (update_game_state) X count:x_count
+[01/May/2020:14:28:58] (update_game_state) X Win:1
+[01/May/2020:14:28:58] (update_game_state) O Win:
+[01/May/2020:14:28:58] (update_game_state) Player removed from turn successfully
+[01/May/2020:14:28:58] (update_game_state) Winner set successfully
+[01/May/2020:14:28:58] (index) Connected to database

@@ -1,5 +1,5 @@
 <?php
-
+    
     //Get current table state
     $sql_get_tiles = "SELECT * FROM `tiles`";
     $sql_get_tiles_result = mysqli_query($conn, $sql_get_tiles);
@@ -13,7 +13,9 @@
     foreach ($results as $result){
         $tiles[$result["x_coord"]][$result["y_coord"]] = $result["char_type"];
     }
-    
+
+    $log->lwrite("checkwin table state utan");
+
     //Check horizontal lines
     for ($i = 0; $i < $size; $i++){
         $x_count = 0;
@@ -49,7 +51,9 @@
                 $o_count++;
             }
         }
+        $log->lwrite("X count:".x_count);
         if ($x_count == 5){ //Check if there are N number of Xs vertically
+           
             $x_won = true;
         }elseif ($o_count == 5) { //Check if there are N number of Os vertically
             $o_won = true;
@@ -111,5 +115,6 @@
         }
     }
 
-
+    $log->lwrite("X Win:".$x_won);
+    $log->lwrite("O Win:".$o_won);
 ?>

@@ -6,6 +6,7 @@
     if (isset($_POST["make_turn"]))
     {    
         #region Init
+        $size = 5;
         $x_coord;
         $y_coord;
         $game_id;
@@ -14,8 +15,8 @@
         $player_on_turn_id;
         $player_on_turn;
         $tile_id;
-        $x_won;
-	    $o_won;
+        $x_won = false;
+	    $o_won = false;
         
         if(isset($_POST["x_coord"])){
             $x_coord = $_POST["x_coord"]-1;
