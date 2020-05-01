@@ -1,10 +1,7 @@
 <?php
-    require_once 'config/config.php';
 
 
-
-
-    //!!Later filter this so that it only returns the 2 active players!!
+    //!!Deprecated!!
 
 
     $sql_change_player = "UPDATE `players` SET `on_turn`= 2 WHERE `on_turn` = 1;";

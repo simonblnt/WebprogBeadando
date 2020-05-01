@@ -1,5 +1,4 @@
 <?php
-    require_once 'config/config.php';
 
 #region Create Database
     #region Database
@@ -16,6 +15,7 @@
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         player1_id INT(6) NOT NULL,
         player2_id VARCHAR(6) NOT NULL,
+        player_on_turn TINYINT DEFAULT NULL,
         winner_id INT(6),
         time_started TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         time_ended TIMESTAMP NULL DEFAULT NULL
@@ -31,8 +31,7 @@
     #region Player Table
     $sql = "CREATE TABLE IF NOT EXISTS players (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        player_name INT(2) NOT NULL,
-        on_turn BOOLEAN DEFAULT false
+        player_name VARCHAR(100) NOT NULL
         )";
         
     if (mysqli_query($conn, $sql)) {
@@ -76,11 +75,11 @@
 #endregion
 
 #region Add data
-    #region Add Players
-    $sql = "INSERT INTO `players` (player_name, on_turn)
-    VALUES (\"Player1\", 0);";
-    $sql = "INSERT INTO `players` (player_name, on_turn)
-    VALUES (\"Player2\", 0);";
+    #region Add Test Players
+    $sql = "INSERT INTO `players` (player_name)
+    VALUES (\"Player1\");";
+    $sql = "INSERT INTO `players` (player_name)
+    VALUES (\"Player2\");";
 
     if (mysqli_query($conn, $sql)) {
         /* echo "Players added successfully"; */
@@ -88,8 +87,8 @@
         /* echo "Error: " . $sql . "<br>" . mysqli_error($conn); */
     }
 
-    $sql = "INSERT INTO `players` (player_name, on_turn)
-    VALUES (\"Player2\", 0);";
+    $sql = "INSERT INTO `players` (player_name)
+    VALUES (\"Player2\");";
 
     if (mysqli_query($conn, $sql)) {
         /* echo "Players added successfully"; */
