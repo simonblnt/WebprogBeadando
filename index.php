@@ -1,3 +1,6 @@
+<?php
+    require_once 'includes/config.php';
+?>
 <!DOCTYPE HTML>
 <head>
     <meta charset="utf-8">
@@ -11,7 +14,12 @@
         <?php
             $size = 5;
 
-            require 'control_bar.php';
+            if ($_SESSION['gameState'] == "ONGOING" || $_SESSION['gameState'] == "INITIAL")
+            {
+                require 'control_bar.php';
+            } else {
+                require 'end_game_bar.php';
+            }
             require 'game.php';
         ?>
     </div>

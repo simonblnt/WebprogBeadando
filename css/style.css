@@ -58,12 +58,20 @@ body {
 }
 
 .control {
-  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.control.bar {
+  flex: 8;
+}
+
+.control.restart {
+  justify-content: center;
+  flex: 1;
 }
 
 .item {

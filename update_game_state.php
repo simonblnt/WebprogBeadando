@@ -1,6 +1,11 @@
 <?php
+if (session_status() == PHP_SESSION_ACTIVE) {
+    $log->lwrite("session starts in update");
+    session_start();
+}
     require_once 'includes/config.php';
     
+
     if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if (isset($_POST["make_turn"]))
@@ -23,7 +28,7 @@
         }else{
             die("No X coordinate specified!");
         }
-        if(isset($_POST["y_coord"])){
+        if(isset($_POST["y_coord"]) ){
             $y_coord = $_POST["y_coord"]-1;
         }else{
             die("No Y coordinate specified!");
@@ -33,6 +38,8 @@
         }else{
             die("No character type specified!");
         }
+
+        
         #endregion
 
 
@@ -43,7 +50,7 @@
                                     WHERE `x_coord`=".$x_coord." AND `y_coord`=".$y_coord;
 
         if (mysqli_query($conn, $sql_add_char_to_tile)) {
-            $log->lwrite("Tile updated successfully");
+            /* $log->lwrite("Tile updated successfully"); */
         } else {
             $log->lwrite("Tile update error: ".mysqli_error($conn));
         }
@@ -59,6 +66,8 @@
         } else {
             echo "0 results";
         }
+
+        require 'includes/get_table_state.php';
 
         //Get the currently active game
         $sql_get_active_game = "SELECT * FROM games WHERE active = 1 LIMIT 1";
@@ -83,7 +92,7 @@
         //Use the fetched data to save the turn
         $sql_save_turn = "INSERT INTO `turns`(`game_id`, `player_id`, `tile_id`) VALUES (".$game_id.",".$player_on_turn_id.",".$tile_id.")";
         if (mysqli_query($conn, $sql_save_turn)) {
-            $log->lwrite("Turn saved successfully");
+            /* $log->lwrite("Turn saved successfully"); */
         } else {
             $log->lwrite("Turn save error: " . $sql . "<br>" . mysqli_error($conn));
         }
@@ -97,7 +106,7 @@
             $sql_remove_player_on_turn = "UPDATE `games` SET `player_on_turn`= NULL WHERE `id`= ".$game_id;
 
             if (mysqli_query($conn, $sql_remove_player_on_turn)) {
-                $log->lwrite("Player removed from turn successfully");
+                /* $log->lwrite("Player removed from turn successfully"); */
             } else {
                 $log->lwrite("Player removed from turn error: " . $sql . "<br>" . mysqli_error($conn));
             }
@@ -106,10 +115,14 @@
             $sql_set_winner_id = "UPDATE `games` SET `winner_id`= ".$player_on_turn_id." WHERE `id`= ".$game_id;
 
             if (mysqli_query($conn, $sql_set_winner_id)) {
-                $log->lwrite("Winner set successfully");
+                /* $log->lwrite("Winner set successfully"); */
             } else {
                 $log->lwrite("Winner set error: " . $sql . "<br>" . mysqli_error($conn));
             }
+
+            //Set gamestate session variable to true
+            $_SESSION["gameState"] = "FINISHED";
+            $log->lwrite("Session varible game state value: ".$_SESSION["gameState"]);
         } else {
             // If nobody won, change the player on turn
             $sql_change_player_on_turn = "";
@@ -120,48 +133,26 @@
             }
             
             if (mysqli_query($conn, $sql_change_player_on_turn)) {
-                $log->lwrite("Player changed successfully");
+                /* $log->lwrite("Player changed successfully"); */
             } else {
                 $log->lwrite("Player change error: " . $sql . "<br>" . mysqli_error($conn));
             }
-        }
 
+            //Set gamestate session variable to true
+            $_SESSION["gameState"] = "ONGOING";
+            $log->lwrite("Session varible game state value: ".$_SESSION["gameState"]);
+        }
+       
         #endregion
-
-    } elseif(isset($_POST["new_game"])) {
-        //End all active games
-        $sql_end_active_game = "UPDATE `games` SET `active`= 0 WHERE `active`= 1";
-
-        if (mysqli_query($conn, $sql_end_active_game)) {
-            $log->lwrite("Game ended successfully");
-        } else {
-            $log->lwrite("Game ending error: " . $sql . "<br>" . mysqli_error($conn));
-        }
-
-        //Start a new game
-        $sql_create_new_game = "INSERT INTO `games`(`player1_id`, `player2_id`, `player_on_turn`, `active`) VALUES (36, 35, 1, 1)";
-
-        if (mysqli_query($conn, $sql_create_new_game)) {
-            $log->lwrite("Game created successfully");
-        } else {
-            $log->lwrite("Game creation error: " . $sql . "<br>" . mysqli_error($conn));
-        }
-
-
-        //Reset current table state to empty
-        $sql_reset_table = "UPDATE `tiles` SET `char_type`=' '";
-
-        if (mysqli_query($conn, $sql_reset_table)) {
-            $log->lwrite("Table reset successful");
-        } else {
-            $log->lwrite("Table reset error: ".mysqli_error($conn));
-        }
     }
 
-    
+
+
+    header('Location: index.php?v='.time());
+    exit;
 }
 
 
-header("location: index.php");
+
 
 ?> 

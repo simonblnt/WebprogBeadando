@@ -1,6 +1,4 @@
 <?php
-
-
 	//Get the currently active game
 	$sql_get_active_game = "SELECT * FROM games WHERE active = 1 LIMIT 1";
 	$active_game = mysqli_query($conn, $sql_get_active_game);
@@ -67,7 +65,6 @@
 		echo "Unlikely error";
 	}
 
-
 	//Get current table state
     $sql_get_tiles = "SELECT * FROM `tiles`";
     $sql_get_tiles_result = mysqli_query($conn, $sql_get_tiles);
@@ -81,7 +78,4 @@
 	foreach ($results as $result){
 		$tiles[$result["x_coord"]][$result["y_coord"]] = $result["char_type"];
 	}
-
-	
-
 ?>

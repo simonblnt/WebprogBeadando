@@ -6,3 +6,7 @@
 - A playerekre lehet kéne csinálni egy login rendszert
     Addig csak simán feltöltjük a playert 2 playerrel -> Player1, Player2
         Ezeket jelezni is kéne, debug szempontjából is jó lenne -> Player 1's turn...
+
+
+
+- Tiles tábla lehetne table tábla
