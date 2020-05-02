@@ -6,12 +6,12 @@ $log->lfile('log/log.txt');
 
 
 if (session_status() != PHP_SESSION_ACTIVE) {
-    $log->lwrite("session starts in config");
+    /* $log->lwrite("session starts in config"); */
     session_start();
 }
 
 if (!isset($_SESSION["gameState"])) {
-    $log->lwrite("gameState initializes in config");
+    /* $log->lwrite("gameState initializes in config"); */
     $_SESSION["gameState"] = "INITIAL";
 }
 

@@ -97,11 +97,32 @@ if (session_status() == PHP_SESSION_ACTIVE) {
             $log->lwrite("Turn save error: " . $sql . "<br>" . mysqli_error($conn));
         }
 
+        // Increment player's turn count
+        $sql_increment_turn_count = NULL;
+        if ($player_on_turn == 1) {
+            $sql_increment_turn_count = "UPDATE `games` SET `player1_turns`= `player1_turns`+1 WHERE `id`= ".$game_id;
+        } elseif ($player_on_turn == 2) {
+            $sql_increment_turn_count = "UPDATE `games` SET `player2_turns`= `player2_turns`+1 WHERE `id`= ".$game_id;
+        }
+       
+        if ($sql_increment_turn_count != NULL)
+        {
+            if (mysqli_query($conn, $sql_increment_turn_count)) {
+                /* $log->lwrite("Turn count incremented successfully, gameid: ".$game_id); */
+            } else {
+                $log->lwrite("Turn count increment error: " . $sql . "<br>" . mysqli_error($conn));
+            }
+        }
+        
+
         //Check if somebody has won
         require 'includes/check_win.php';
 
         // If somebody won, update the game table
         if ($x_won || $y_won) {
+            //Set current player as winner
+            $winner_id = $player_on_turn_id;
+
             // Set player_on_turn -> null
             $sql_remove_player_on_turn = "UPDATE `games` SET `player_on_turn`= NULL WHERE `id`= ".$game_id;
 
@@ -112,12 +133,21 @@ if (session_status() == PHP_SESSION_ACTIVE) {
             }
 
             // Set winner_id
-            $sql_set_winner_id = "UPDATE `games` SET `winner_id`= ".$player_on_turn_id." WHERE `id`= ".$game_id;
+            $sql_set_winner_id = "UPDATE `games` SET `winner_id`= ".$winner_id." WHERE `id`= ".$game_id;
 
             if (mysqli_query($conn, $sql_set_winner_id)) {
                 /* $log->lwrite("Winner set successfully"); */
             } else {
                 $log->lwrite("Winner set error: " . $sql . "<br>" . mysqli_error($conn));
+            }
+
+            // Increment player's win count
+            $sql_increment_win_count = "UPDATE `players` SET `wins`= `wins`+1 WHERE `id`= ".$winner_id;
+
+            if (mysqli_query($conn, $sql_increment_win_count)) {
+                /* $log->lwrite("Winner set successfully"); */
+            } else {
+                $log->lwrite("Winner increment error: " . $sql . "<br>" . mysqli_error($conn));
             }
 
             //Set gamestate session variable to true
