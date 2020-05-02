@@ -36,7 +36,7 @@
                 $o_count++;
             }
         }
-        $log->lwrite("X count:".x_count);
+        /* $log->lwrite("X count:".x_count); */
         if ($x_count == 5){ //Check if there are N number of Xs vertically
            
             $x_won = true;

@@ -21,7 +21,8 @@ if (session_status() == PHP_SESSION_ACTIVE) {
         $player_on_turn;
         $tile_id;
         $x_won = false;
-	    $o_won = false;
+        $o_won = false;
+        $draw = false;
         
         if(isset($_POST["x_coord"])){
             $x_coord = $_POST["x_coord"]-1;
@@ -67,6 +68,7 @@ if (session_status() == PHP_SESSION_ACTIVE) {
             echo "0 results";
         }
 
+        //Get current table state
         require 'includes/get_table_state.php';
 
         //Get the currently active game
@@ -118,6 +120,9 @@ if (session_status() == PHP_SESSION_ACTIVE) {
         //Check if somebody has won
         require 'includes/check_win.php';
 
+        //Check if game is a draw
+        require 'includes/check_draw.php';
+
         // If somebody won, update the game table
         if ($x_won || $y_won) {
             //Set current player as winner
@@ -150,9 +155,38 @@ if (session_status() == PHP_SESSION_ACTIVE) {
                 $log->lwrite("Winner increment error: " . $sql . "<br>" . mysqli_error($conn));
             }
 
-            //Set gamestate session variable to true
+            //Set gamestate session variable to finished
             $_SESSION["gameState"] = "FINISHED";
             $log->lwrite("Session varible game state value: ".$_SESSION["gameState"]);
+
+
+
+        } elseif ($draw == true) {
+            //Setting winner_id to -1, this indicates draw
+            $winner_id = -1;
+
+            // Set player_on_turn -> null
+            $sql_remove_player_on_turn = "UPDATE `games` SET `player_on_turn`= NULL WHERE `id`= ".$game_id;
+
+            if (mysqli_query($conn, $sql_remove_player_on_turn)) {
+                /* $log->lwrite("Player removed from turn successfully"); */
+            } else {
+                $log->lwrite("Player removed from turn error: " . $sql . "<br>" . mysqli_error($conn));
+            }
+
+            // Set winner_id
+            $sql_set_winner_id = "UPDATE `games` SET `winner_id`= ".$winner_id." WHERE `id`= ".$game_id;
+
+            if (mysqli_query($conn, $sql_set_winner_id)) {
+                /* $log->lwrite("Winner set successfully"); */
+            } else {
+                $log->lwrite("Winner set error: " . $sql . "<br>" . mysqli_error($conn));
+            }
+
+            //Set gamestate session variable to finished
+            $_SESSION["gameState"] = "FINISHED";
+            $log->lwrite("Session varible game state value: ".$_SESSION["gameState"]);
+            
         } else {
             // If nobody won, change the player on turn
             $sql_change_player_on_turn = "";
@@ -168,7 +202,7 @@ if (session_status() == PHP_SESSION_ACTIVE) {
                 $log->lwrite("Player change error: " . $sql . "<br>" . mysqli_error($conn));
             }
 
-            //Set gamestate session variable to true
+            //Set gamestate session variable to ongoing
             $_SESSION["gameState"] = "ONGOING";
             $log->lwrite("Session varible game state value: ".$_SESSION["gameState"]);
         }

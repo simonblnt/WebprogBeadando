@@ -15,6 +15,12 @@ if (!isset($_SESSION["gameState"])) {
     $_SESSION["gameState"] = "INITIAL";
 }
 
+if (!isset($_SESSION["countdown"])) {
+    /* $log->lwrite("gameState initializes in config"); */
+    $_SESSION["countdown"] = "15";
+    $_SESSION['time_started'] = time();
+}
+
 
 $servername = "localhost";
 $username = "root";

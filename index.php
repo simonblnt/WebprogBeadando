@@ -14,10 +14,13 @@
         <?php
             $size = 5;
 
-            if ($_SESSION['gameState'] == "ONGOING" || $_SESSION['gameState'] == "INITIAL")
+            if ($_SESSION['gameState'] == "INITIAL")
             {
                 require 'control_bar.php';
-            } else {
+            } elseif ($_SESSION['gameState'] == "ONGOING") {
+                require 'control_bar.php';
+            }
+             else {
                 require 'end_game_bar.php';
             }
             require 'game.php';

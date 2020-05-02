@@ -15,54 +15,60 @@
 		echo "0 results";
 	}
 
-	//Get active players
-	$sql_get_player_1 = "SELECT * FROM players WHERE id = ".$player1_id." LIMIT 1";
-	$player1 = mysqli_query($conn, $sql_get_player_1);
+	if ($winner_id != -1) {
+		//Get active players
+		$sql_get_player_1 = "SELECT * FROM players WHERE id = ".$player1_id." LIMIT 1";
+		$player1 = mysqli_query($conn, $sql_get_player_1);
 
-	if (mysqli_num_rows($player1) > 0) {
-		while($row = mysqli_fetch_assoc($player1)) {
-			$player1_id = $row["id"];
-			$player1_name = $row["player_name"];
+		if (mysqli_num_rows($player1) > 0) {
+			while($row = mysqli_fetch_assoc($player1)) {
+				$player1_id = $row["id"];
+				$player1_name = $row["player_name"];
+			}
+		} else {
+			echo "0 results";
+		}
+
+		$sql_get_player_2 = "SELECT * FROM players WHERE id = ".$player2_id." LIMIT 1";
+		$player2 = mysqli_query($conn, $sql_get_player_2);
+
+		if (mysqli_num_rows($player2) > 0) {
+			while($row = mysqli_fetch_assoc($player2)) {
+				$player2_id = $row["id"];
+				$player2_name = $row["player_name"];
+			}
+		} else {
+			echo "0 results";
+		}
+
+		//Check if either of the active players has won
+		if ($winner_id == $player1_id) {
+			$p1_won = true;
+			$p2_won = false;
+			$p1_on_turn = false;
+			$p2_on_turn = false;
+		} elseif ($winner_id == $player2_id) {
+			$p1_won = false;
+			$p2_won = true;
+			$p1_on_turn = false;
+			$p2_on_turn = false;
+		} elseif ($player_on_turn_id == 1) {
+			$p1_won = false;
+			$p2_won = false;
+			$p1_on_turn = true;
+			$p2_on_turn = false;
+		} elseif ($player_on_turn_id == 2) {
+			$p1_won = false;
+			$p2_won = false;
+			$p1_on_turn = false;
+			$p2_on_turn = true;
 		}
 	} else {
-		echo "0 results";
-	}
-
-	$sql_get_player_2 = "SELECT * FROM players WHERE id = ".$player2_id." LIMIT 1";
-	$player2 = mysqli_query($conn, $sql_get_player_2);
-
-	if (mysqli_num_rows($player2) > 0) {
-		while($row = mysqli_fetch_assoc($player2)) {
-			$player2_id = $row["id"];
-			$player2_name = $row["player_name"];
-		}
-	} else {
-		echo "0 results";
-	}
-
-	//Check if either of the active players has won
-	if ($winner_id == $player1_id) {
-		$p1_won = true;
-		$p2_won = false;
-		$p1_on_turn = false;
-		$p2_on_turn = false;
-	} elseif ($winner_id == $player2_id) {
-		$p1_won = false;
-		$p2_won = true;
-		$p1_on_turn = false;
-		$p2_on_turn = false;
-	} elseif ($player_on_turn_id == 1) {
-		$p1_won = false;
-		$p2_won = false;
-		$p1_on_turn = true;
-		$p2_on_turn = false;
-	} elseif ($player_on_turn_id == 2) {
 		$p1_won = false;
 		$p2_won = false;
 		$p1_on_turn = false;
-		$p2_on_turn = true;
-	} else {
-		echo "Unlikely error";
+		$p2_on_turn = false;
+		$draw = true;
 	}
 
 	//Get current table state

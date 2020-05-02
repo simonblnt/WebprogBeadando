@@ -10,6 +10,7 @@
 	$player2_name;
 	$p1_won;
 	$p2_won;
+	$draw;
 	$p1_on_turn;
 	$p2_on_turn;
 	$notification = "";
@@ -28,6 +29,8 @@
 		$notification.="<p class='game-notification'>".$player1_name."'s turn</p>";
 	}elseif ($p2_on_turn == true) {
 		$notification.="<p class='game-notification'>".$player2_name."'s turn</p>";
+	}elseif ($draw == true) {
+		$notification.="<p class='game-notification'>Draw</p>";
 	}
 	else{
 		$notification.="<p class='game-notification'></p>";

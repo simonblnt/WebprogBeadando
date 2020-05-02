@@ -1,1 +1,247 @@
 [02/May/2020:13:39:24] (leaderboard) Connected to database
+[02/May/2020:13:48:07] (index) Connected to database
+[02/May/2020:13:48:47] (restart_game) Connected to database
+[02/May/2020:13:48:47] (restart_game) Session varible game state value: ONGOING
+[02/May/2020:13:48:47] (index) Connected to database
+[02/May/2020:13:48:50] (update_game_state) Connected to database
+[02/May/2020:13:48:50] (update_game_state) checkwin table state utan
+[02/May/2020:13:48:50] (update_game_state) X count:x_count
+[02/May/2020:13:48:50] (update_game_state) X count:x_count
+[02/May/2020:13:48:50] (update_game_state) X count:x_count
+[02/May/2020:13:48:50] (update_game_state) X count:x_count
+[02/May/2020:13:48:50] (update_game_state) X count:x_count
+[02/May/2020:13:48:50] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:13:48:50] (index) Connected to database
+[02/May/2020:14:04:54] (index) Connected to database
+[02/May/2020:14:04:56] (update_game_state) Connected to database
+[02/May/2020:14:04:56] (update_game_state) checkwin table state utan
+[02/May/2020:14:04:56] (update_game_state) X count:x_count
+[02/May/2020:14:04:56] (update_game_state) X count:x_count
+[02/May/2020:14:04:56] (update_game_state) X count:x_count
+[02/May/2020:14:04:56] (update_game_state) X count:x_count
+[02/May/2020:14:04:56] (update_game_state) X count:x_count
+[02/May/2020:14:05:22] (index) Connected to database
+[02/May/2020:14:05:23] (index) Connected to database
+[02/May/2020:14:05:24] (update_game_state) Connected to database
+[02/May/2020:14:05:24] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:43] (index) Connected to database
+[02/May/2020:14:05:44] (index) Connected to database
+[02/May/2020:14:05:47] (update_game_state) Connected to database
+[02/May/2020:14:05:47] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:47] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:47] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:05:47] (index) Connected to database
+[02/May/2020:14:05:49] (update_game_state) Connected to database
+[02/May/2020:14:05:50] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:50] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:50] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:05:50] (index) Connected to database
+[02/May/2020:14:05:55] (update_game_state) Connected to database
+[02/May/2020:14:05:55] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:55] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:55] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:05:55] (index) Connected to database
+[02/May/2020:14:05:57] (update_game_state) Connected to database
+[02/May/2020:14:05:57] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:57] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:57] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:05:57] (index) Connected to database
+[02/May/2020:14:05:59] (update_game_state) Connected to database
+[02/May/2020:14:05:59] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:59] (update_game_state) checkwin table state utan
+[02/May/2020:14:05:59] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:05:59] (index) Connected to database
+[02/May/2020:14:06:02] (update_game_state) Connected to database
+[02/May/2020:14:06:02] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:02] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:02] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:02] (index) Connected to database
+[02/May/2020:14:06:04] (update_game_state) Connected to database
+[02/May/2020:14:06:04] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:04] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:04] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:04] (index) Connected to database
+[02/May/2020:14:06:06] (update_game_state) Connected to database
+[02/May/2020:14:06:06] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:06] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:06] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:07] (index) Connected to database
+[02/May/2020:14:06:09] (update_game_state) Connected to database
+[02/May/2020:14:06:10] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:10] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:10] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:10] (index) Connected to database
+[02/May/2020:14:06:12] (update_game_state) Connected to database
+[02/May/2020:14:06:12] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:12] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:12] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:12] (index) Connected to database
+[02/May/2020:14:06:18] (update_game_state) Connected to database
+[02/May/2020:14:06:18] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:18] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:18] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:18] (index) Connected to database
+[02/May/2020:14:06:20] (update_game_state) Connected to database
+[02/May/2020:14:06:20] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:20] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:20] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:20] (index) Connected to database
+[02/May/2020:14:06:23] (update_game_state) Connected to database
+[02/May/2020:14:06:23] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:23] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:23] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:23] (index) Connected to database
+[02/May/2020:14:06:24] (update_game_state) Connected to database
+[02/May/2020:14:06:25] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:25] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:25] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:25] (index) Connected to database
+[02/May/2020:14:06:28] (update_game_state) Connected to database
+[02/May/2020:14:06:29] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:29] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:29] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:29] (index) Connected to database
+[02/May/2020:14:06:38] (update_game_state) Connected to database
+[02/May/2020:14:06:39] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:39] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:39] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:39] (index) Connected to database
+[02/May/2020:14:06:46] (update_game_state) Connected to database
+[02/May/2020:14:06:46] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:46] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:46] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:47] (index) Connected to database
+[02/May/2020:14:06:50] (update_game_state) Connected to database
+[02/May/2020:14:06:50] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:50] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:50] (update_game_state) Session varible game state value: FINISHED
+[02/May/2020:14:06:50] (index) Connected to database
+[02/May/2020:14:06:55] (restart_game) Connected to database
+[02/May/2020:14:06:55] (restart_game) Session varible game state value: ONGOING
+[02/May/2020:14:06:55] (index) Connected to database
+[02/May/2020:14:06:58] (update_game_state) Connected to database
+[02/May/2020:14:06:58] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:58] (update_game_state) checkwin table state utan
+[02/May/2020:14:06:58] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:06:58] (index) Connected to database
+[02/May/2020:14:07:00] (update_game_state) Connected to database
+[02/May/2020:14:07:00] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:00] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:00] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:00] (index) Connected to database
+[02/May/2020:14:07:02] (update_game_state) Connected to database
+[02/May/2020:14:07:02] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:02] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:02] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:02] (index) Connected to database
+[02/May/2020:14:07:03] (update_game_state) Connected to database
+[02/May/2020:14:07:03] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:03] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:04] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:04] (index) Connected to database
+[02/May/2020:14:07:06] (update_game_state) Connected to database
+[02/May/2020:14:07:07] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:07] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:07] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:07] (index) Connected to database
+[02/May/2020:14:07:15] (update_game_state) Connected to database
+[02/May/2020:14:07:15] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:15] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:15] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:15] (index) Connected to database
+[02/May/2020:14:07:17] (update_game_state) Connected to database
+[02/May/2020:14:07:17] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:17] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:17] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:17] (index) Connected to database
+[02/May/2020:14:07:20] (update_game_state) Connected to database
+[02/May/2020:14:07:20] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:20] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:20] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:20] (index) Connected to database
+[02/May/2020:14:07:28] (update_game_state) Connected to database
+[02/May/2020:14:07:28] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:28] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:28] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:28] (index) Connected to database
+[02/May/2020:14:07:31] (update_game_state) Connected to database
+[02/May/2020:14:07:31] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:31] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:31] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:31] (index) Connected to database
+[02/May/2020:14:07:32] (update_game_state) Connected to database
+[02/May/2020:14:07:33] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:33] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:33] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:33] (index) Connected to database
+[02/May/2020:14:07:36] (update_game_state) Connected to database
+[02/May/2020:14:07:36] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:36] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:36] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:36] (index) Connected to database
+[02/May/2020:14:07:40] (update_game_state) Connected to database
+[02/May/2020:14:07:40] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:40] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:40] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:40] (index) Connected to database
+[02/May/2020:14:07:48] (update_game_state) Connected to database
+[02/May/2020:14:07:48] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:48] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:48] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:48] (index) Connected to database
+[02/May/2020:14:07:54] (update_game_state) Connected to database
+[02/May/2020:14:07:54] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:54] (update_game_state) checkwin table state utan
+[02/May/2020:14:07:54] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:07:54] (index) Connected to database
+[02/May/2020:14:08:01] (update_game_state) Connected to database
+[02/May/2020:14:08:02] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:02] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:02] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:02] (index) Connected to database
+[02/May/2020:14:08:06] (update_game_state) Connected to database
+[02/May/2020:14:08:06] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:06] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:06] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:06] (index) Connected to database
+[02/May/2020:14:08:11] (update_game_state) Connected to database
+[02/May/2020:14:08:11] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:11] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:11] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:11] (index) Connected to database
+[02/May/2020:14:08:13] (update_game_state) Connected to database
+[02/May/2020:14:08:13] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:13] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:13] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:13] (index) Connected to database
+[02/May/2020:14:08:18] (update_game_state) Connected to database
+[02/May/2020:14:08:18] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:18] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:18] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:18] (index) Connected to database
+[02/May/2020:14:08:25] (update_game_state) Connected to database
+[02/May/2020:14:08:25] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:25] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:25] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:25] (index) Connected to database
+[02/May/2020:14:08:30] (update_game_state) Connected to database
+[02/May/2020:14:08:31] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:31] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:31] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:31] (index) Connected to database
+[02/May/2020:14:08:34] (update_game_state) Connected to database
+[02/May/2020:14:08:34] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:34] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:34] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:34] (index) Connected to database
+[02/May/2020:14:08:39] (update_game_state) Connected to database
+[02/May/2020:14:08:39] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:39] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:39] (update_game_state) Session varible game state value: ONGOING
+[02/May/2020:14:08:39] (index) Connected to database
+[02/May/2020:14:08:44] (update_game_state) Connected to database
+[02/May/2020:14:08:45] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:45] (update_game_state) checkwin table state utan
+[02/May/2020:14:08:45] (update_game_state) Session varible game state value: FINISHED
+[02/May/2020:14:08:45] (index) Connected to database
+[02/May/2020:14:16:49] (index) Connected to database
